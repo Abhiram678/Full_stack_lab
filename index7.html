@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration Form Example</title>
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<form action="/submit_registration" method="post">
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <td><label for="fullname">Full Name:</label></td>
+            <td><input type="text" id="fullname" name="fullname" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td><label for="age">Age:</label></td>
+            <td><input type="number" id="age" name="age" min="1" max="120" required></td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                <input type="checkbox" id="reading" name="hobbies" value="Reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="Traveling">
+                <label for="traveling">Traveling</label>
+                <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="country">Country:</label></td>
+            <td>
+                <select id="country" name="country" required>
+                    <option value="">--Select Country--</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="about">About You:</label></td>
+            <td>
+                <textarea id="about" name="about" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Semantic Elements Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer, nav, main, section, article, aside {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <p>Welcome to my <span style="color: blue;">HTML5</span> semantic structure demo!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Latest Articles</h2>
+        <article>
+            <h3>Understanding Semantic HTML</h3>
+            <p>Semantic HTML introduces meaning to the web page rather than just presentation.</p>
+        </article>
+
+        <article>
+            <h3>Benefits of Using HTML5 Tags</h3>
+            <p>HTML5 makes your web content more accessible and SEO-friendly.</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Image of the Day</h2>
+        <figure>
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image" width="300">
+            <figcaption>A beautiful placeholder image.</figcaption>
+        </figure>
+    </section>
+
+</main>
+
+<aside>
+    <h3>Related Links</h3>
+    <ul>
+        <li><a href="#">W3Schools HTML5 Guide</a></li>
+        <li><a href="#">MDN Web Docs</a></li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
